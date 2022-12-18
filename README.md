@@ -1,5 +1,5 @@
-#Money Spender Management
-#Project Kelompok GoLang - Matkul AP3
+# Money Spender Management
+# Project Kelompok GoLang - Matkul AP3
 
 <b>How To Run:
 1. Download semua folder & file yang ada (pull request)
