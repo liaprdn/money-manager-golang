@@ -1,0 +1,76 @@
+/*
+Aulia Pradina
+2IA20
+50421237
+*/
+
+html, body {
+    font-family: 'Helvetica Neue', 'sans-serif';
+    height: 100%;
+    width: 100%; 
+    font-weight: 600;
+}
+
+.font-blue {
+    color: #1F3C88;
+
+}
+.title {
+    font-size: 25pt;
+    padding-top: 75px;
+}
+
+.sec-title {
+    font-size: 25pt;
+    padding-top: 50px;
+}
+
+.img-assets {
+    height: 350px;
+    position: center;
+}
+
+.btn-primary {
+    background-color: #1F3C88;
+    font-weight: 600;
+    border-radius: 8pt;
+}
+
+.form-control{
+    border-color: #1F3C88;
+    border-width: 2px;
+}
+
+.table-bordered{
+    border: #1F3C88;
+}
+
+.wrapper-table {
+    border-radius: 10px;
+    border: 2px solid #1F3C88;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table.blue-border > thead > tr > th{
+    border-bottom: 2px solid #1F3C88;
+}
+
+table > tbody > tr > td  {
+    font-weight: 400;
+}
+
+.btn-edit {
+    background-color: #67C1AD;
+    font-weight: 600;
+    border-radius: 8pt;
+}
+
+.btn-del {
+    background-color: #D36060;
+    font-weight: 600;
+    border-radius: 8pt;
+}
+

@@ -1,0 +1,43 @@
+{{ define "Index" }} {{ template "Header" }}
+<head>
+    <title>Money Spender Management</title>
+</head>
+<!-- Title -->
+<div class="container col">
+    <div class="text-center font-blue title">Money Spender Management</div>
+    <div class="text-center font-blue fs-5">
+        Website Manajemen Keuangan anda
+    </div>
+</div>
+<!-- Dekorasi Gambar -->
+<div class="text-center">
+    <img
+        class="img-fluid img-assets center"
+        src="assets/img/Mar-Business_11.jpg"
+    />
+</div>
+<!-- Navigation Button -->
+<div class="container text-center">
+    <!-- ke halaman Tambah Transaksi-->
+    <a
+        class="btn btn-primary"
+        href="/tambah"
+        role="button"
+        style="margin-right: 25px; width: 150px"
+    >
+        Tambah <br />
+        Transaksi
+    </a>
+    <!-- ke halaman Lihat Catatan Transaksi-->
+    <a
+        class="btn btn-primary"
+        href="/tampil"
+        role="button"
+        style="width: 150px"
+    >
+        Lihat Catatan <br />
+        Transaksi
+    </a>
+</div>
+
+{{ template "Footer" }} {{ end }}

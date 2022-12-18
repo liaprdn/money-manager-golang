@@ -1,0 +1,116 @@
+{{ define "Edit" }} {{ template "Header" }}
+<title>Edit Transaksi</title>
+<div class="container col">
+    <!-- Title -->
+    <div class="font-blue sec-title">Edit Transaksi</div>
+    <!-- Dekorasi Gambar-->
+    <div class="float-end">
+        <img
+            class="img-fluid img-assets center mt-xl-5"
+            src="../assets/img/Hands of student doing test or writing in planner.jpg"
+        />
+    </div>
+    <!-- Form Tambah Transaksi-->
+    <form method="POST" action="update">
+        <ul class="list-group mt-3" style="max-width: 500px">
+            <li
+                class="list-group-item"
+                style="
+                    background-color: #eaf3fa;
+                    border-color: #1f3c88;
+                    border-width: 2px;
+                "
+            >
+                <!-- Id Transaksi Tersembunyi -->
+                <input
+                    name="id_transaksi"
+                    type="hidden"
+                    class="form-control"
+                    value="{{ .Id_transaksi }}"
+                />
+                <!-- Input Tanggal Pengeluaran -->
+                <div class="mb-3">
+                    <label class="form-label font-blue"
+                        >Tanggal Pengeluaran</label
+                    >
+                    <input
+                        name="tgl_pengeluaran"
+                        type="text"
+                        class="form-control"
+                        value="{{ .Tgl_pengeluaran }}"
+                        placeholder="DD-MM-YYYY"
+                    />
+                </div>
+                <!-- Input Nominal -->
+                <div class="mb-3">
+                    <label class="form-label font-blue">Nominal</label>
+                    <div class="input-group mb-3">
+                        <span
+                            class="input-group-text"
+                            style="
+                                background-color: #ffffff;
+                                border-color: #1f3c88;
+                                border-width: 2px;
+                            "
+                            >Rp</span
+                        >
+                        <input
+                            name="nominal"
+                            type="number"
+                            class="form-control"
+                            value="{{ .Nominal }}"
+                        />
+                    </div>
+                </div>
+                <!-- Input Sumber Dana-->
+                <div class="mb-3">
+                    <label class="form-label font-blue">Sumber Dana</label>
+                    <input
+                        name="sumber_dana"
+                        type="text"
+                        class="form-control"
+                        value="{{ .Sumber_dana }}"
+                    />
+                </div>
+                <!-- Input Jenis Kebutuhan-->
+                <div class="mb-3">
+                    <label class="form-label font-blue">Jenis Kebutuhan</label>
+                    <input
+                        name="jenis_kebutuhan"
+                        type="text"
+                        class="form-control"
+                        value="{{ .Jenis_kebutuhan }}"
+                    />
+                </div>
+                <!-- Input Nama Pengeluaran-->
+                <div class="mb-3">
+                    <label class="form-label font-blue">Nama Pengeluaran</label>
+                    <input
+                        name="nama_pengeluaran"
+                        type="text"
+                        class="form-control"
+                        value="{{ .Nama_pengeluaran }}"
+                    />
+                </div>
+            </li>
+        </ul>
+        <!-- Navigation Button -->
+        <div class="container mt-4">
+            <!-- Kembali ke Beranda -->
+            <a class="btn btn-primary mt-3" href="/index" role="button">
+                <img
+                    class="img-fluid"
+                    src="../assets/img/icon/home (1).png"
+                    style="height: 40px"
+                />
+            </a>
+            <!-- ke halaman Simpan Transaksi -->
+            <input
+                type="submit"
+                value="Simpan Transaksi"
+                class="btn btn-primary mt-3 float-end"
+            />
+        </div>
+    </form>
+</div>
+{{ template "Footer" }} {{ end }}

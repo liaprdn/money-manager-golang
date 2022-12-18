@@ -1,0 +1,83 @@
+{{ define "Tampil" }} {{ template "Header" }}
+<title>Catatan Transaksi Anda</title>
+<div class="container col">
+    <!-- Title -->
+    <div class="font-blue sec-title">Catatan Transaksi Anda</div>
+    <div class="wrapper-table mt-4">
+        <table class="table table-hover font-blue blue-border table-borderless">
+            <thead>
+                <th scope="col">No.</th>
+                <th scope="col">Tanggal Pengeluaran</th>
+                <th scope="col">Nominal</th>
+                <th scope="col">Jenis Kebutuhan</th>
+                <th scope="col">Sumber Dana</th>
+                <th scope="col">Nama Pengeluaran</th>
+                <th scope="col">Aksi</th>
+            </thead>
+            <tbody>
+                {{ range . }}
+                <tr>
+                    <td>{{ .Id_transaksi }}</td>
+                    <td>{{ .Tgl_pengeluaran }}</td>
+                    <td>Rp {{ .Nominal }}</td>
+                    <td>{{ .Jenis_kebutuhan }}</td>
+                    <td>{{ .Sumber_dana }}</td>
+                    <td>{{ .Nama_pengeluaran }}</td>
+                    <!-- Edit Button -->
+                    <td>
+                        <a
+                            class="btn-success btn btn-edit"
+                            href="/edit?id_transaksi={{ .Id_transaksi }}"
+                            role="button"
+                        >
+                            <img
+                                class="img-fluid"
+                                src="../assets/img/icon/pencil (2).png"
+                                style="height: 20px"
+                            />
+                        </a>
+                        <!-- Delete Button -->
+                        <a
+                            class="btn-danger btn btn-del"
+                            href="/delete?id_transaksi={{ .Id_transaksi }}"
+                            role="button"
+                        >
+                            <img
+                                class="img-fluid"
+                                src="../assets/img/icon/trash-can.png"
+                                style="height: 20px"
+                            />
+                        </a>
+                    </td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+    <div class="container mt-4 text-center">
+        <!-- Kembali ke Beranda -->
+        <a
+            class="btn btn-primary mt-3"
+            href="/index"
+            role="button"
+            style="margin-right: 15px"
+        >
+            <img
+                class="img-fluid"
+                src="../assets/img/icon/home (1).png"
+                style="height: 50px"
+            />
+        </a>
+        <!-- ke halaman Tambah Transaksi -->
+        <a
+            class="btn btn-primary mt-3"
+            href="/tambah"
+            style="margin-right: 10px; width: 150px"
+            role="button"
+        >
+            Tambah <br />
+            Transaksi
+        </a>
+    </div>
+</div>
+{{ template "Footer" }} {{ end }}
