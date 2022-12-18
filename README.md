@@ -1,5 +1,4 @@
-# Money Spender Management
-# Project Kelompok GoLang - Matkul AP3
+# Money Spender Management - Project Kelompok GoLang - Matkul AP3
 
 <b>How To Run </b>:
 1. Download semua folder & file yang ada (pull request)
@@ -9,7 +8,7 @@
 5. Buka browser, lalu copy link http://localhost:1393/ kedalam browser
 
 <b>Programming Language </b>: 
-1. Basic Web Language (HTML, CSS, JS)
-2. Back End : GO
-3. Framework: Bootstrap
-4. Database : mysql, phpmyadmin
+<b>1. Basic Web Language </b>(HTML, CSS, JS)
+<b>2. Back End </b>: GO
+<b>3. Framework </b>: Bootstrap
+<b>4. Database </b>: mysql, phpmyadmin
