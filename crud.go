@@ -29,7 +29,7 @@ func dbConn() (db *sql.DB) {
 }
 
 // jalanin semua file html di folder form
-var tmpl = template.Must(template.ParseGlob("form/*"))
+var tmpl = template.Must(template.ParseGlob("display/*"))
 
 // index halaman
 func Index(w http.ResponseWriter, r *http.Request) {
