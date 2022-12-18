@@ -8,7 +8,7 @@
 5. Buka browser, lalu copy link http://localhost:1393/ kedalam browser
 
 <b>Programming Language </b>: <br>
-<b>1. Basic Web Language </b>(HTML, CSS, JS) <br>
-<b>2. Back End </b>: GO <br>
-<b>3. Framework </b>: Bootstrap <br>
-<b>4. Database </b>: mysql, phpmyadmin
+1.<b> Basic Web Language </b>(HTML, CSS, JS) <br>
+2.<b> Back End </b>: GO <br>
+3.<b> Framework </b>: Bootstrap <br>
+4.<b> Database </b>: mysql, phpmyadmin
