@@ -7,8 +7,8 @@
 4. Ketikkan go run crud.go
 5. Buka browser, lalu copy link http://localhost:1393/ kedalam browser
 
-<b>Programming Language </b>: 
-<b>1. Basic Web Language </b>(HTML, CSS, JS)
-<b>2. Back End </b>: GO
-<b>3. Framework </b>: Bootstrap
+<b>Programming Language </b>: <br>
+<b>1. Basic Web Language </b>(HTML, CSS, JS) <br>
+<b>2. Back End </b>: GO <br>
+<b>3. Framework </b>: Bootstrap <br>
 <b>4. Database </b>: mysql, phpmyadmin
