@@ -95,21 +95,32 @@
             </li>
         </ul>
         <!-- Navigation Button -->
-        <div class="container mt-4">
-            <!-- Kembali ke Beranda -->
-            <a class="btn btn-primary mt-3" href="/index" role="button">
+        <div class="container mt-3">
+            <!-- Batal dan kembali ke halaman Catatan Transaksi -->
+            <a
+                class="btn btn-primary mt-3"
+                href="/tampil"
+                style="margin-right: 10px"
+                role="button"
+            >
+                < Batal
+            </a>
+            <!-- ke halaman Simpan Transaksi -->
+            <input
+                type="submit"
+                value="Simpan Transaksi"
+                class="btn btn-primary mt-2 float-end"
+            />
+        </div>
+        <!-- Kembali ke Beranda-->
+        <div class="container mt-4 text-center">
+            <a class="btn btn-primary mt-3 mb-2" href="/index" role="button">
                 <img
                     class="img-fluid"
                     src="../assets/img/icon/home (1).png"
                     style="height: 40px"
                 />
             </a>
-            <!-- ke halaman Simpan Transaksi -->
-            <input
-                type="submit"
-                value="Simpan Transaksi"
-                class="btn btn-primary mt-3 float-end"
-            />
         </div>
     </form>
 </div>
