@@ -2,7 +2,7 @@
 
 <b>How To Run </b>:
 1. Download semua folder & file yang ada (pull request)
-3. Buka XAMPP, jalankan bagian MySQL Database & Apache
+3. Buka XAMPP, jalankan port MySQL Database & Apache
 2. Buat database di phpmyadmin dengan nama db_project_ap3, lalu import file db_project_ap3.sql kedalam database
 3. Buka cmd, pastikan berada di folder yang berisi semua folder & file dari project ini
 4. Ketikkan go run crud.go
